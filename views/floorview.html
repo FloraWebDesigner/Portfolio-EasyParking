@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+
+<head>
+    <meta charset="utf-8">
+    <link href="../style/style.css" rel="stylesheet" type="text/css">
+    <script src="../script/floorview.js"></script>
+    <title>Floor View</title>
+</head>
+
+<body>
+    <header id="header" class="content-wrapper">
+        <div id="logo-and-site-name">
+            <span id="logo"></span>
+            <span class="yellow bg">Parking Space</span>Floor View
+        </div>
+        <nav id="main-navigation" aria-label="Main navigation">
+            <ul class="menu">
+                <li><a href="./dashboard.html">Home</a></li>
+                <li><a href="./userinput.html">Parking a Vehicle</a></li>
+                <li><a href="./summary.html">Data Summary</a></li>
+                <li><a href="./floorview.html">Floor View</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main" class="floor-plan">
+        <section class="top-floor">
+            <div>
+                <img src="../img/Tree4.png" alt="top left trees in the parking space">
+            </div>
+            <div id="topleft-space">
+                <div id="space01" class="car-space-vertical"></div>
+                <div id="space02" class="car-space-vertical"></div>
+                <div id="space03" class="car-space-vertical"></div>
+                <div id="space04" class="car-space-vertical"></div>
+            </div>
+            <div>
+                <img src="../img/ShoppingCenter.png" alt="This is a shopping center in the floor plan.">
+            </div>
+            <div id="topright-space">
+                <div id="space05" class="car-space-vertical"></div>
+                <div id="space06" class="car-space-vertical"></div>
+                <div id="space07" class="car-space-vertical"></div>
+                <div id="space08" class="car-space-vertical"></div>
+            </div>
+            <div>
+                <img src="../img/Tree5.png" alt="top right trees in the parking space">
+            </div>
+        </section>
+        <section class="middle-floor">
+            <div>
+                <img src="../img/Restaurant.png" alt="This is a Restaurant in the floor plan.">
+            </div>
+            <div id="middleleft-space">
+                <div id="space09" class="car-space"></div>
+                <div id="space10" class="car-space"></div>
+                <div id="space11" class="car-space"></div>
+                <div id="space12" class="car-space"></div>
+                <div id="space13" class="car-space"></div>
+                <div id="space14" class="car-space"></div>
+                <div id="space15" class="car-space"></div>
+                <div id="space16" class="car-space"></div>
+            </div>
+            <div id="middle-space">
+                <div id="space17" class="car-space"></div>
+                <div id="space18" class="car-space"></div>
+                <div id="space19" class="car-space"></div>
+                <div id="space20" class="car-space"></div>
+                <div id="space21" class="car-space"></div>
+                <div id="space22" class="car-space"></div>
+                <div id="space23" class="car-space"></div>
+                <div id="space24" class="car-space"></div>
+            </div>
+            <div>
+                <img src="../img/Tree1.png" alt="This is a circle tree area in the floor plan.">
+            </div>
+            <div id="middleright-space">
+                <div id="space25" class="car-space"></div>
+                <div id="space26" class="car-space"></div>
+                <div id="space27" class="car-space"></div>
+                <div id="space28" class="car-space"></div>
+            </div>
+        </section>
+
+
+        <section class="bottom-floor">
+            <div>
+                <img src="../img/Tree2.png" alt="There are trees on the bottom in the parking space">
+            </div>
+            <div>
+                <img src="../img/Parking.png" alt="This is the parking entry and exit.">
+            </div>
+            <div>
+                <img src="../img/Office.png" alt="This is a office building in the floor plan.">
+            </div>
+        </section>
+
+        <!--            
+            <section class="ds-background">
+                <header id="header" class="content-wrapper">
+                    <h2 id="logo-and-site-name">
+                        <span id="logo"></span>
+                        Parking Summary
+                    </h2>
+                    
+                 </header>
+                <section id="card">
+                    <div class="first-row">
+                        <div class="general-card">
+                            <div class="card-container" width="281px" height="167px">
+                                <div class="ds-label">Park Space</div>
+                                <div id="park-space">01</div>
+                            </div>
+                            <div class="card-container" width="281px" height="167px">
+                                <div class="ds-label">Total Time</div>
+                                <div id="total-time">3.5H</div>
+                            </div>
+                        </div>
+                        <div class="visitor-card">
+                            <div class="card-container" width="180px" height="167px">
+                                <div class="ds-label">License</div>
+                                <div id="license">EH5876</div>
+                            </div>
+                            <div class="card-container" width="180px" height="167px">
+                                <div class="ds-label">Visitor</div>
+                                <div id="visitor">James</div>
+                            </div>
+                            <div class="card-container" width="180px" height="167px">
+                                <div class="ds-label">Phone</div>
+                                <div id="Phone">6475552222</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-row">
+                        <div class="time-card">
+                            <div class="card-container" width="180px" height="167px">
+                                <div class="ds-label">Time Out</div>
+                                <div id="time-out">Y</div>
+                            </div>
+                            <div class="card-container" width="180px" height="167px">
+                                <div class="ds-label">Start Time</div>
+                                <div id="start-time">14:00 2024-07-09</div>
+                            </div>
+                            <div class="card-container" width="180px" height="167px">
+                                <div class="ds-label">Overnight</div>
+                                <div id="overnight">N</div>
+                            </div>
+                        </div>
+                        <div class="vehicle-card">
+                            <div class="card-container" width="180px" height="167px">
+                                <div class="ds-label">Brand</div>
+                                <div id="brand">Toyota</div>
+                            </div>
+                            <div class="card-container" width="180px" height="167px">
+                                <div class="ds-label">Type</div>
+                                <div id="type">Mini</div>
+                            </div>
+                            <div class="card-container" width="180px" height="167px">
+                                <div class="ds-label">Color</div>
+                                <div id="Color">Blue</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="ds-btn">
+                    <button type="button">Remind Visitor</button>
+                    <button type="button"><a href="#main">Back</a></button>
+                </div>
+                </section> -->
+    </main>
+    <footer>
+        <p>CopyRight: &copy;2024 Humber HTTP5121. All rights reserved.</p>
+    </footer>
+</body>
+

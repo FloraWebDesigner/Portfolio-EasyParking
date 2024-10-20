@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+
+<head>
+    <meta charset="utf-8">
+
+<!--      <style>
+        #VisitorInput {
+            display: none;
+        }
+        
+       /*  line 203 */
+    </style>  -->
+    <title>Visitor Input</title>
+    <link href="../style/style.css" rel="stylesheet" type="text/css">
+    <script src="../script/input.js"></script>
+</head>
+
+<body>
+    <div class="user-container">
+        <header id="header" class="content-wrapper">
+            <div id="logo-and-site-name">
+                <span id="logo"></span>
+                <div class="yellow">Parking </div>Registration
+            </div>
+            <nav id="main-navigation" aria-label="Main navigation">
+                <ul class="menu">
+                    <li><a href="./dashboard.html">Home</a></li>
+                    <li><a href="./userinput.html">Parking a Vehicle</a></li>
+                    <li><a href="./summary.html">Data Summary</a></li>
+                    <li><a href="./floorview.html">Floor View</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <form id="VisitorInput" action="#" method="get">
+            <fieldset id="visitorInfo">
+                <h2>Contact Information</h2>
+                <div class="usercontact-input">
+                    <label for="visitorName" class="required">Visitor Name:</label>
+                    <input type="text" id="visitorName" name="visitorName" placeholder="e.g.Sean">
+                    <div class="notShown" id="nameRequired">Please enter your name.</div>
+                </div>
+                <div class="usercontact-input">
+                    <label for="phoneNum" class="required">Contact Phone Number:</label>
+                    <input type="tel" id="phoneNum" name="phoneNum" placeholder="10 digital number">
+                    <div class="notShown" id="phoneRequired">Please enter a valid 11-digit phone number</div>
+                </div>
+
+            </fieldset>
+            <fieldset id="vehicleInfo">
+                <h2>Vehicle Registration</h2>
+                <div class="vehicle-info">
+                    <label for="vehicleNum" class="required">License:</label>
+                    <input type="text" id="vehicleNum" name="vehicleNum" placeholder="e.g.WD568" class="required">
+                    <div class="notShown" id="licenseRequired">Please enter your vehicle license correctly.(a valid
+                        license
+                        should include at least 2 letter and 2 number)</div>
+                    <div class="notShown" id="licenseExist">Your vehicle has already been parked here, please check your
+                        parking information.</div>
+                    <!--
+                <input type="submit" id="checkParking" name="checkParking" class="notShown">
+                -->
+                </div>
+                <div class="space-info">
+                    <label for="spaceNum" class="required">Select Parking Space#:</label>
+                    <select id="spaceNum" name="spaceNum">
+                        <option value='default' disabled selected class="default">Choose an option</option>
+                        <option value='space01'>space01</option>
+                        <option value='space02'>space02</option>
+                        <option value='space03'>space03</option>
+                        <option value='space04'>space04</option>
+                        <option value='space05'>space05</option>
+                        <option value='space06'>space06</option>
+                        <option value='space07'>space07</option>
+                        <option value='space08'>space08</option>
+                        <option value='space09'>space09</option>
+                        <option value='space10'>space10</option>
+                        <option value='space11'>space11</option>
+                        <option value='space12'>space12</option>
+                        <option value='space13'>space13</option>
+                        <option value='space14'>space14</option>
+                        <option value='space15'>space15</option>
+                        <option value='space16'>space16</option>
+                        <option value='space17'>space17</option>
+                        <option value='space18'>space18</option>
+                        <option value='space19'>space19</option>
+                        <option value='space20'>space20</option>
+                        <option value='space21'>space21</option>
+                        <option value='space22'>space22</option>
+                        <option value='space23'>space23</option>
+                        <option value='space24'>space24</option>
+                        <option value='space25'>space25</option>
+                        <option value='space26'>space26</option>
+                        <option value='space27'>space27</option>
+                        <option value='space28'>space28</option>
+                    </select>
+                    <div class="notShown" id="spaceRequired">You haven't selected your parking space.</div>
+                    <div class="notShown" id="spaceExist">This parking space has already been occupied, please choose
+                        another space.</div>
+                </div>
+                <div id="prepaidTime">
+                    <p class="required">Prepaid Time:</p>
+                    <div class="prepaid-choice">
+                        <input type="radio" id="0.5hr" name="prepaidhr" value="0.5hr">
+                        <label for="0.5hr">0.5 hr</label>
+                        <input type="radio" id="1hr" name="prepaidhr" value="1hr">
+                        <label for="1hr">1 hr</label>
+                        <input type="radio" id="1.5hr" name="prepaidhr" value="1.5hr">
+                        <label for="1.5hr">1.5 hr</label>
+                        <input type="radio" id="2hr" name="prepaidhr" value="2hr">
+                        <label for="2hr">2hr</label>
+                    </div>
+                    <div class="notShown" id="prepaidRequired">Please select your prepaid hours.</div>
+                </div>
+                <div class="vehicle-info">
+                    <label for="type">Vehicle Type:</label>
+                    <input type="text" id="type" name="type" placeholder="Sedans">
+                </div>
+                <div class="vehicle-info">
+                    <label for="brand">Vehicle Brand:</label>
+                    <input type="text" id="brand" name="brand" placeholder="Hyundai">
+                </div>
+                <div class="vehicle-info">
+                    <label for="color">Vehicle Color:</label>
+                    <input type="color" id="color" name="color" />
+                </div>
+            </fieldset>
+            <div class="protection">
+                <div class="terms">
+                    <input type="checkbox" id="confidentality" name="confidentality" value="confidentality">
+                    <label for="confidentality" class="term-text">By submitting this information and using this parking
+                        facility, I
+                        acknowledge
+                        that I have read and agree to the terms and conditions of the Parking Agreement.</label>
+                </div>
+                <div class="notShown" id="acceptanceRequired">Please read it carefully and check the acknowledgment of
+                    information.</div>
+            </div>
+            <div>
+                <input type="submit" id="submitForm" name="submitForm">
+            </div>
+        </form>
+
+        <div id="thanksMsg">
+            <div class="thanksMsg-grid">
+                <div class="thanksMsg-left">
+                    <p class="hello">Hello,<span id="usernameMsg">USERNAME</span></p>
+                    <p class="thanksInfo">Welcome to <em>Easy Parking</em></p>                  
+                    <p class="thanksDetails">
+                        Your paid parking time for <span id="licenseMsg">LISENCE</span>in <span id="spaceMsg">SPACE#</span> will
+                        expire at the following time.</p>
+                    <!-- OUTPUT TIME VALUES -->
+                    <p class="timeDown">
+                        <span id="hoursOut">00:</span>
+                        <span id="minsOut">00:</span>
+                        <span id="secsOut">00</span>
+                    </p>
+                    <div class="thanksbtn">
+                        <div id="backToSystem" class="backbtn"><a
+                                href="./dashboard.html">Home
+                                </a></div>
+                        <div id="backToForm" class="backbtn"><a href="./userinput.html">Continue to
+                                Park</a></div>
+                    </div>
+                </div>
+                <div class="thanksMsg-right">
+                    <img src="../img/colorfulshapes.png" alt="color spaces">
+                    <div class="slogan">Simplifying Your Parking Experience</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

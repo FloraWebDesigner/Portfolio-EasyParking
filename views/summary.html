@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+
+<head>
+    <meta charset="utf-8">
+    <link href="../style/style.css" rel="stylesheet" type="text/css">
+    <script src="../script/summary.js"></script>
+    <title>Parking Summary</title>
+</head>
+
+<body>
+    <header id="header" class="content-wrapper">
+        <div id="logo-and-site-name">
+            <span id="logo"></span>
+            <div class="yellow bg">Parking </div>Summary
+        </div>
+        <nav id="main-navigation" aria-label="Main navigation">
+            <ul class="menu">
+                <li><a href="./dashboard.html">Home</a></li>
+                <li><a href="./userinput.html">Parking a Vehicle</a></li>
+                <li><a href="./summary.html">Data Summary</a></li>
+                <li><a href="./floorview.html">Floor View</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="summaryMsg">
+        <p class="summaryReport"></p>
+        <div class="timeNow"></div>
+    </div>
+    <table class="parkingTable">
+        <thead>
+            <!--
+        {"name":"Mathew",
+        "phone":"1234567890",
+        "vehicle":{"license":"123VVV",
+                    "space":"space04",
+                    "color":"#000000",
+                    "brand":"",
+                    "type":""},
+        "time":{"prepaidTime":"1hr",
+                "startTime":"Thu, 25 Jul 2024 15:29:19 GMT"}}
+        -->
+            <tr>
+                <th>Space</th>
+                <th>License</th>
+                <th>Start Time</th>
+                <th>Prepaid Time</th>
+                <th>Park Time</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Brand</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+
+</html>
